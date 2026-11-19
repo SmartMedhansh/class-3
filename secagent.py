@@ -37,4 +37,17 @@ print("Secret Code Name:", code_name)
 reversed_gadget = gadget[::-1]
 print("Reversed Gadget Name:", reversed_gadget)
 
-# Part 7: Join everything together
+# Part 7: Join everything together to build the final badge
+badge_line_1 = "AGENT" + code_name.upper()
+badge_line_2 = "ID" + agent_number_text + " | MISSION: " + mission_count_text
+badge_line_3 = "SPEED: " + speed_rating_text + " | ACTIVE: " + status_text
+bagde_line_4 = "SECRET GADGET CODE" + reversed_gadget.upper()
+
+#Part 8: Print the complete secret agent badge
+print("")
+print("===== SECRET AGENT BADGE =====")
+print(badge_line_1)
+print(badge_line_2)
+print(badge_line_3)
+print(bagde_line_4)
+print("==============================")
